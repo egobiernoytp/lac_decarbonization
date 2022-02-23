@@ -56,7 +56,7 @@ def check_path(fp, create_q = False):
     if os.path.exists(fp):
         return fp
     elif create_q:
-        os.mkdirs(fp, exist_ok = True)
+        os.makedirs(fp, exist_ok = True)
     else:
         raise ValueError(f"Path '{fp}' not found. It will not be created.")
 
